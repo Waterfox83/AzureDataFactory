@@ -1,0 +1,3674 @@
+{
+	"name": "Json1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SourceBlobStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "AHRPA8571C.json",
+				"container": "source-container"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"ITR": {
+					"type": "object",
+					"properties": {
+						"ITR3": {
+							"type": "object",
+							"properties": {
+								"CreationInfo": {
+									"type": "object",
+									"properties": {
+										"SWVersionNo": {
+											"type": "string"
+										},
+										"SWCreatedBy": {
+											"type": "string"
+										},
+										"JSONCreatedBy": {
+											"type": "string"
+										},
+										"JSONCreationDate": {
+											"type": "string"
+										},
+										"Digest": {
+											"type": "string"
+										}
+									}
+								},
+								"Form_ITR3": {
+									"type": "object",
+									"properties": {
+										"FormName": {
+											"type": "string"
+										},
+										"Description": {
+											"type": "string"
+										},
+										"AssessmentYear": {
+											"type": "string"
+										},
+										"SchemaVer": {
+											"type": "string"
+										},
+										"FormVer": {
+											"type": "string"
+										}
+									}
+								},
+								"PartA_GEN1": {
+									"type": "object",
+									"properties": {
+										"PersonalInfo": {
+											"type": "object",
+											"properties": {
+												"AssesseeName": {
+													"type": "object",
+													"properties": {
+														"FirstName": {
+															"type": "string"
+														},
+														"SurNameOrOrgName": {
+															"type": "string"
+														}
+													}
+												},
+												"Address": {
+													"type": "object",
+													"properties": {
+														"ResidenceNo": {
+															"type": "string"
+														},
+														"ResidenceName": {
+															"type": "string"
+														},
+														"RoadOrStreet": {
+															"type": "string"
+														},
+														"LocalityOrArea": {
+															"type": "string"
+														},
+														"StateCode": {
+															"type": "string"
+														},
+														"CountryCode": {
+															"type": "string"
+														},
+														"PinCode": {
+															"type": "integer"
+														},
+														"CountryCodeMobile": {
+															"type": "integer"
+														},
+														"MobileNo": {
+															"type": "integer"
+														},
+														"CountryCodeMobileNoSec": {
+															"type": "integer"
+														},
+														"EmailAddress": {
+															"type": "string"
+														}
+													}
+												},
+												"PAN": {
+													"type": "string"
+												},
+												"DOB": {
+													"type": "string"
+												},
+												"Status": {
+													"type": "string"
+												},
+												"AadhaarCardNo": {
+													"type": "string"
+												}
+											}
+										},
+										"FilingStatus": {
+											"type": "object",
+											"properties": {
+												"NewTaxRegime": {
+													"type": "string"
+												},
+												"SeventhProvisio139": {
+													"type": "string"
+												},
+												"DepAmtAggAmtExcd1CrPrYrFlg": {
+													"type": "string"
+												},
+												"IncrExpAggAmt2LkTrvFrgnCntryFlg": {
+													"type": "string"
+												},
+												"IncrExpAggAmt1LkElctrctyPrYrFlg": {
+													"type": "string"
+												},
+												"ResidentialStatus": {
+													"type": "string"
+												},
+												"BenefitUs115HFlg": {
+													"type": "string"
+												},
+												"PortugeseCC5A": {
+													"type": "string"
+												},
+												"AsseseeRepFlg": {
+													"type": "string"
+												},
+												"CompDirectorPrvYrFlg": {
+													"type": "string"
+												},
+												"HeldUnlistedEqShrPrYrFlg": {
+													"type": "string"
+												}
+											}
+										}
+									}
+								},
+								"PARTA_BS": {
+									"type": "object",
+									"properties": {
+										"FundSrc": {
+											"type": "object",
+											"properties": {
+												"PropFund": {
+													"type": "object",
+													"properties": {
+														"ResrNSurp": {
+															"type": "object",
+															"properties": {
+																"TotResrNSurp": {
+																	"type": "integer"
+																}
+															}
+														},
+														"TotPropFund": {
+															"type": "integer"
+														}
+													}
+												},
+												"LoanFunds": {
+													"type": "object",
+													"properties": {
+														"SecrLoan": {
+															"type": "object",
+															"properties": {
+																"RupeeLoan": {
+																	"type": "object",
+																	"properties": {
+																		"TotRupeeLoan": {
+																			"type": "integer"
+																		}
+																	}
+																},
+																"TotSecrLoan": {
+																	"type": "integer"
+																}
+															}
+														},
+														"UnsecrLoan": {
+															"type": "object",
+															"properties": {
+																"TotUnSecrLoan": {
+																	"type": "integer"
+																}
+															}
+														},
+														"TotLoanFund": {
+															"type": "integer"
+														}
+													}
+												},
+												"TotFundSrc": {
+													"type": "integer"
+												}
+											}
+										},
+										"FundApply": {
+											"type": "object",
+											"properties": {
+												"FixedAsset": {
+													"type": "object",
+													"properties": {
+														"NetBlock": {
+															"type": "integer"
+														},
+														"TotFixedAsset": {
+															"type": "integer"
+														}
+													}
+												},
+												"Investments": {
+													"type": "object",
+													"properties": {
+														"LongTermInv": {
+															"type": "object",
+															"properties": {
+																"TotLongTermInv": {
+																	"type": "integer"
+																}
+															}
+														},
+														"TradeInv": {
+															"type": "object",
+															"properties": {
+																"TotTradeInv": {
+																	"type": "integer"
+																}
+															}
+														},
+														"TotInvestments": {
+															"type": "integer"
+														}
+													}
+												},
+												"CurrAssetLoanAdv": {
+													"type": "object",
+													"properties": {
+														"CurrAsset": {
+															"type": "object",
+															"properties": {
+																"Inventories": {
+																	"type": "object",
+																	"properties": {
+																		"TotInventries": {
+																			"type": "integer"
+																		}
+																	}
+																},
+																"CashOrBankBal": {
+																	"type": "object",
+																	"properties": {
+																		"TotCashOrBankBal": {
+																			"type": "integer"
+																		}
+																	}
+																},
+																"TotCurrAsset": {
+																	"type": "integer"
+																}
+															}
+														},
+														"LoanAdv": {
+															"type": "object",
+															"properties": {
+																"TotLoanAdv": {
+																	"type": "integer"
+																}
+															}
+														},
+														"CurrLiabilitiesProv": {
+															"type": "object",
+															"properties": {
+																"CurrLiabilities": {
+																	"type": "object",
+																	"properties": {
+																		"TotCurrLiabilities": {
+																			"type": "integer"
+																		}
+																	}
+																},
+																"Provisions": {
+																	"type": "object",
+																	"properties": {
+																		"TotProvisions": {
+																			"type": "integer"
+																		}
+																	}
+																},
+																"TotCurrLiabilitiesProvision": {
+																	"type": "integer"
+																}
+															}
+														},
+														"TotCurrAssetLoanAdv": {
+															"type": "integer"
+														},
+														"NetCurrAsset": {
+															"type": "integer"
+														}
+													}
+												},
+												"MiscAdjust": {
+													"type": "object",
+													"properties": {
+														"TotMiscAdjust": {
+															"type": "integer"
+														}
+													}
+												},
+												"TotFundApply": {
+													"type": "integer"
+												}
+											}
+										}
+									}
+								},
+								"ManufacturingAccount": {
+									"type": "object",
+									"properties": {
+										"OpeningInventory": {
+											"type": "object",
+											"properties": {
+												"OpngInvntryTotal": {
+													"type": "integer"
+												},
+												"DirectExpenses": {
+													"type": "integer"
+												},
+												"TotalFactoryOverheads": {
+													"type": "integer"
+												},
+												"TotalDebtsManfctrngAcc": {
+													"type": "integer"
+												}
+											}
+										},
+										"ClosingStock": {
+											"type": "object",
+											"properties": {
+												"ClsngStckTotal": {
+													"type": "integer"
+												}
+											}
+										},
+										"CostOfGoodsPrdcd": {
+											"type": "integer"
+										}
+									}
+								},
+								"TradingAccount": {
+									"type": "object",
+									"properties": {
+										"ExciseCustomsVAT": {
+											"type": "object",
+											"properties": {
+												"TotExciseCustomsVAT": {
+													"type": "integer"
+												}
+											}
+										},
+										"DutyTaxPay": {
+											"type": "object",
+											"properties": {
+												"ExciseCustomsVAT": {
+													"type": "object",
+													"properties": {
+														"TotExciseCustomsVAT": {
+															"type": "integer"
+														}
+													}
+												}
+											}
+										},
+										"OperatingRevenueTotal": {
+											"type": "integer"
+										},
+										"SalesGrossReceiptsTotal": {
+											"type": "integer"
+										},
+										"TotRevenueFrmOperations": {
+											"type": "integer"
+										},
+										"TardingAccTotCred": {
+											"type": "integer"
+										},
+										"DirectExpenses": {
+											"type": "integer"
+										},
+										"DirectExpensesTotal": {
+											"type": "integer"
+										},
+										"GoodsCostPrdcdFrmMA": {
+											"type": "integer"
+										},
+										"GrossProfitFrmBusProf": {
+											"type": "integer"
+										}
+									}
+								},
+								"PARTA_PL": {
+									"type": "object",
+									"properties": {
+										"CreditsToPL": {
+											"type": "object",
+											"properties": {
+												"OthIncome": {
+													"type": "object",
+													"properties": {
+														"MiscOthIncome": {
+															"type": "integer"
+														},
+														"TotOthIncome": {
+															"type": "integer"
+														}
+													}
+												},
+												"GrossProfitTrnsfFrmTrdAcc": {
+													"type": "integer"
+												},
+												"TotCreditsToPL": {
+													"type": "integer"
+												}
+											}
+										},
+										"DebitsToPL": {
+											"type": "object",
+											"properties": {
+												"EmployeeComp": {
+													"type": "object",
+													"properties": {
+														"TotEmployeeComp": {
+															"type": "integer"
+														}
+													}
+												},
+												"Insurances": {
+													"type": "object",
+													"properties": {
+														"TotInsurances": {
+															"type": "integer"
+														}
+													}
+												},
+												"CommissionExpdrDtls": {
+													"type": "object",
+													"properties": {
+														"Total": {
+															"type": "integer"
+														}
+													}
+												},
+												"RoyalityDtls": {
+													"type": "object",
+													"properties": {
+														"Total": {
+															"type": "integer"
+														}
+													}
+												},
+												"ProfessionalConstDtls": {
+													"type": "object",
+													"properties": {
+														"Total": {
+															"type": "integer"
+														}
+													}
+												},
+												"RatesTaxesPays": {
+													"type": "object",
+													"properties": {
+														"ExciseCustomsVAT": {
+															"type": "object",
+															"properties": {
+																"TotExciseCustomsVAT": {
+																	"type": "integer"
+																}
+															}
+														}
+													}
+												},
+												"BadDebtDtls": {
+													"type": "object",
+													"properties": {
+														"BadDebtAmtDtlsTotal": {
+															"type": "integer"
+														},
+														"OthersPANNotAvlblDtlTotal": {
+															"type": "integer"
+														},
+														"BadDebt": {
+															"type": "integer"
+														}
+													}
+												},
+												"InterestExpdrtDtls": {
+													"type": "object",
+													"properties": {
+														"InterestExpdr": {
+															"type": "integer"
+														}
+													}
+												},
+												"OtherExpenses": {
+													"type": "integer"
+												},
+												"PBIDTA": {
+													"type": "integer"
+												},
+												"PBT": {
+													"type": "integer"
+												}
+											}
+										},
+										"TaxProvAppr": {
+											"type": "object",
+											"properties": {
+												"ProfitAfterTax": {
+													"type": "integer"
+												},
+												"AmtAvlAppr": {
+													"type": "integer"
+												},
+												"ProprietorAccBalTrf": {
+													"type": "integer"
+												}
+											}
+										},
+										"PersumptiveInc44AD": {
+											"type": "object",
+											"properties": {
+												"GrsTrnOverOrReceipt": {
+													"type": "integer"
+												},
+												"TotPersumptiveInc44AD": {
+													"type": "integer"
+												}
+											}
+										},
+										"NoBooksOfAccPL": {
+											"type": "object",
+											"properties": {
+												"GrossReceipt": {
+													"type": "integer"
+												},
+												"NetProfit": {
+													"type": "integer"
+												},
+												"GrossReceiptPrf": {
+													"type": "integer"
+												},
+												"NetProfitPrf": {
+													"type": "string"
+												},
+												"TotBusinessProfession": {
+													"type": "integer"
+												}
+											}
+										},
+										"TotalNumOfMonths": {
+											"type": "integer"
+										},
+										"TotalPrsumptvIncUs44EGoods": {
+											"type": "integer"
+										},
+										"TotalPrsumptvIncUs44E": {
+											"type": "integer"
+										},
+										"NetIncomeFrmSpecActivity": {
+											"type": "integer"
+										}
+									}
+								},
+								"PARTA_OI": {
+									"type": "object",
+									"properties": {
+										"NoCredToPLAmt": {
+											"type": "object",
+											"properties": {
+												"TotNoCredToPLAmt": {
+													"type": "integer"
+												}
+											}
+										},
+										"AmtDisallUs36": {
+											"type": "object",
+											"properties": {
+												"TotAmtDisallUs36": {
+													"type": "integer"
+												}
+											}
+										},
+										"AmtDisallUs37": {
+											"type": "object",
+											"properties": {
+												"TotAmtDisallUs37": {
+													"type": "integer"
+												}
+											}
+										},
+										"AmtDisallUs40": {
+											"type": "object",
+											"properties": {
+												"TotAmtDisallUs40": {
+													"type": "integer"
+												}
+											}
+										},
+										"AmtDisallUs40A": {
+											"type": "object",
+											"properties": {
+												"TotAmtDisallUs40A": {
+													"type": "integer"
+												}
+											}
+										},
+										"AmtDisallUs43BPyNowAll": {
+											"type": "object",
+											"properties": {
+												"AmtUs43B": {
+													"type": "object",
+													"properties": {
+														"TotAmtUs43b": {
+															"type": "integer"
+														}
+													}
+												}
+											}
+										},
+										"AmtDisall43B": {
+											"type": "object",
+											"properties": {
+												"AmtUs43B": {
+													"type": "object",
+													"properties": {
+														"TotAmtUs43b": {
+															"type": "integer"
+														}
+													}
+												}
+											}
+										},
+										"AmtExciseCustomsVATOutstanding": {
+											"type": "object",
+											"properties": {
+												"ExciseCustomsVAT": {
+													"type": "object",
+													"properties": {
+														"TotExciseCustomsVAT": {
+															"type": "integer"
+														}
+													}
+												}
+											}
+										},
+										"MethodOfAcct": {
+											"type": "string"
+										},
+										"ChangeInAcctMethFlg": {
+											"type": "string"
+										},
+										"ProfDeviatDueAcctMeth": {
+											"type": "integer"
+										},
+										"DecProOrIncLossUs145_2": {
+											"type": "integer"
+										},
+										"DeemedProfUs33ABs": {
+											"type": "integer"
+										},
+										"ScheduleTPSAFlg": {
+											"type": "string"
+										}
+									}
+								},
+								"ScheduleS": {
+									"type": "object",
+									"properties": {
+										"Salaries": {
+											"type": "array",
+											"items": {
+												"type": "object",
+												"properties": {
+													"AddressDetail": {
+														"type": "object",
+														"properties": {
+															"AddrDetail": {
+																"type": "string"
+															},
+															"CityOrTownOrDistrict": {
+																"type": "string"
+															},
+															"StateCode": {
+																"type": "string"
+															},
+															"PinCode": {
+																"type": "string"
+															}
+														}
+													},
+													"Salarys": {
+														"type": "object",
+														"properties": {
+															"GrossSalary": {
+																"type": "integer"
+															},
+															"Salary": {
+																"type": "integer"
+															},
+															"ValueOfPerquisites": {
+																"type": "integer"
+															},
+															"ProfitsinLieuOfSalary": {
+																"type": "integer"
+															}
+														}
+													},
+													"NameOfEmployer": {
+														"type": "string"
+													},
+													"TANofEmployer": {
+														"type": "string"
+													}
+												}
+											}
+										},
+										"AllwncExemptUs10": {
+											"type": "object",
+											"properties": {
+												"AllwncExemptUs10Dtls": {
+													"type": "array",
+													"items": {
+														"type": "object",
+														"properties": {
+															"SalNatureDesc": {
+																"type": "string"
+															},
+															"SalOthAmount": {
+																"type": "integer"
+															}
+														}
+													}
+												}
+											}
+										},
+										"TotalGrossSalary": {
+											"type": "integer"
+										},
+										"AllwncExtentExemptUs10": {
+											"type": "integer"
+										},
+										"NetSalary": {
+											"type": "integer"
+										},
+										"DeductionUS16": {
+											"type": "integer"
+										},
+										"DeductionUnderSection16ia": {
+											"type": "integer"
+										},
+										"EntertainmntalwncUs16ii": {
+											"type": "integer"
+										},
+										"ProfessionalTaxUs16iii": {
+											"type": "integer"
+										},
+										"TotIncUnderHeadSalaries": {
+											"type": "integer"
+										}
+									}
+								},
+								"ScheduleHP": {
+									"type": "object",
+									"properties": {
+										"PropertyDetails": {
+											"type": "array",
+											"items": {
+												"type": "object",
+												"properties": {
+													"AddressDetailWithZipCode": {
+														"type": "object",
+														"properties": {
+															"AddrDetail": {
+																"type": "string"
+															},
+															"CityOrTownOrDistrict": {
+																"type": "string"
+															},
+															"StateCode": {
+																"type": "string"
+															},
+															"CountryCode": {
+																"type": "string"
+															},
+															"PinCode": {
+																"type": "integer"
+															}
+														}
+													},
+													"Rentdetails": {
+														"type": "object",
+														"properties": {
+															"TotalUnrealizedAndTax": {
+																"type": "integer"
+															},
+															"BalanceALV": {
+																"type": "integer"
+															},
+															"AnnualOfPropOwned": {
+																"type": "integer"
+															},
+															"ThirtyPercentOfBalance": {
+																"type": "integer"
+															},
+															"TotalDeduct": {
+																"type": "integer"
+															},
+															"IncomeOfHP": {
+																"type": "integer"
+															}
+														}
+													},
+													"PropertyOwner": {
+														"type": "string"
+													},
+													"PropCoOwnedFlg": {
+														"type": "string"
+													},
+													"AsseseeShareProperty": {
+														"type": "string"
+													},
+													"ifLetOut": {
+														"type": "string"
+													}
+												}
+											}
+										},
+										"PassThroghIncome": {
+											"type": "integer"
+										},
+										"TotalIncomeChargeableUnHP": {
+											"type": "integer"
+										}
+									}
+								},
+								"ITR3ScheduleBP": {
+									"type": "object",
+									"properties": {
+										"BusinessIncOthThanSpec": {
+											"type": "object",
+											"properties": {
+												"IncRecCredPLOthHeadDtls": {
+													"type": "object",
+													"properties": {
+														"OtherSources": {
+															"type": "integer"
+														}
+													}
+												},
+												"ProfitLossInclRefrdSec": {
+													"type": "object",
+													"properties": {
+														"ProfitLossUs44AD": {
+															"type": "integer"
+														},
+														"ProfitLossUs44ADA": {
+															"type": "integer"
+														},
+														"ProfitLossUs44AE": {
+															"type": "integer"
+														},
+														"ProfitLossUs44B": {
+															"type": "integer"
+														},
+														"ProfitLossUs44BB": {
+															"type": "integer"
+														},
+														"ProfitLossUs44BBA": {
+															"type": "integer"
+														},
+														"ProfitLossUs44DA": {
+															"type": "integer"
+														}
+													}
+												},
+												"IncCredPL": {
+													"type": "object",
+													"properties": {
+														"OthExempInc": {
+															"type": "integer"
+														},
+														"TotExempIncPL": {
+															"type": "integer"
+														}
+													}
+												},
+												"DepreciationAllowITAct32": {
+													"type": "object",
+													"properties": {
+														"DepreciationAllowUs32_1_ii": {
+															"type": "integer"
+														},
+														"TotDeprAllowITAct": {
+															"type": "integer"
+														}
+													}
+												},
+												"DeemedProfitBusUs": {
+													"type": "object",
+													"properties": {
+														"Section44AD": {
+															"type": "integer"
+														},
+														"Section44ADA": {
+															"type": "integer"
+														},
+														"Section44AE": {
+															"type": "integer"
+														},
+														"TotDeemedProfitBusUs": {
+															"type": "integer"
+														}
+													}
+												},
+												"ProfBfrTaxPL": {
+													"type": "integer"
+												},
+												"NetPLFromSpecBus": {
+													"type": "integer"
+												},
+												"PLUs44sChapXIIG": {
+													"type": "integer"
+												},
+												"TotalProfitFrmActCvrd": {
+													"type": "integer"
+												},
+												"BalancePLOthThanSpecBus": {
+													"type": "integer"
+												},
+												"ExpDebToPLExemptIncDisAllwUs14A": {
+													"type": "integer"
+												},
+												"TotExpDebPL": {
+													"type": "integer"
+												},
+												"AdjustedPLOthThanSpecBus": {
+													"type": "integer"
+												},
+												"DepreciationDebPLCosAct": {
+													"type": "integer"
+												},
+												"AdjustPLAfterDeprOthSpecInc": {
+													"type": "integer"
+												},
+												"AmtDebPLDisallowUs36": {
+													"type": "integer"
+												},
+												"AmtDebPLDisallowUs37": {
+													"type": "integer"
+												},
+												"AmtDebPLDisallowUs40": {
+													"type": "integer"
+												},
+												"AmtDebPLDisallowUs40A": {
+													"type": "integer"
+												},
+												"AmtDebPLDisallowUs43B": {
+													"type": "integer"
+												},
+												"DeemIncUs3380HHD80IA": {
+													"type": "integer"
+												},
+												"OthItemDisallowUs28To44DA": {
+													"type": "integer"
+												},
+												"AnyOthIncNotInclInExpDisallowPL": {
+													"type": "integer"
+												},
+												"IncProfDecLossAccICDSAdj": {
+													"type": "integer"
+												},
+												"TotAfterAddToPLDeprOthSpecInc": {
+													"type": "integer"
+												},
+												"DebPLUs35ExcessAmt": {
+													"type": "integer"
+												},
+												"AmtDisallUs40NowAllow": {
+													"type": "integer"
+												},
+												"AmtDisallUs43BNowAllow": {
+													"type": "integer"
+												},
+												"DecProfIncLossAccICDSAdj": {
+													"type": "integer"
+												},
+												"TotDeductionAmts": {
+													"type": "integer"
+												},
+												"PLAftAdjDedBusOthThanSpec": {
+													"type": "integer"
+												},
+												"NetPLAftAdjBusOthThanSpec": {
+													"type": "integer"
+												},
+												"NetPLBusOthThanSpec7A7B7C": {
+													"type": "integer"
+												},
+												"IncomeOtherThanRule": {
+													"type": "integer"
+												},
+												"BalIncDeemedFrmAgri": {
+													"type": "integer"
+												}
+											}
+										},
+										"SpecBusinessInc": {
+											"type": "object",
+											"properties": {
+												"NetPLFrmSpecBus": {
+													"type": "integer"
+												},
+												"AdjustedPLFrmSpecuBus": {
+													"type": "integer"
+												}
+											}
+										},
+										"SpecifiedBusinessInc": {
+											"type": "object",
+											"properties": {
+												"NetPLFrmSpecifiedBus": {
+													"type": "integer"
+												},
+												"ProfitLossSpecifiedBusiness": {
+													"type": "integer"
+												},
+												"PLFrmSpecifiedBus": {
+													"type": "integer"
+												}
+											}
+										},
+										"BusSetoffCurrYr": {
+											"type": "object",
+											"properties": {
+												"SpeculativeInc": {
+													"type": "object",
+													"properties": {
+														"BusLossSetoff": {
+															"type": "integer"
+														},
+														"IncOfCurYrAfterSetOff": {
+															"type": "integer"
+														}
+													}
+												},
+												"SpecifiedInc": {
+													"type": "object",
+													"properties": {
+														"BusLossSetoff": {
+															"type": "integer"
+														},
+														"IncOfCurYrAfterSetOff": {
+															"type": "integer"
+														}
+													}
+												},
+												"LossSetOffOnBusLoss": {
+													"type": "string"
+												},
+												"TotLossSetOffOnBus": {
+													"type": "integer"
+												},
+												"LossRemainSetOffOnBus": {
+													"type": "integer"
+												}
+											}
+										},
+										"IncChrgUnHdProftGain": {
+											"type": "integer"
+										}
+									}
+								},
+								"ScheduleDPM": {
+									"type": "object",
+									"properties": {
+										"PlantMachinery": {
+											"type": "object",
+											"properties": {
+												"Rate15": {
+													"type": "object",
+													"properties": {
+														"DepreciationDetail": {
+															"type": "object",
+															"properties": {
+																"AdjustedWDVFirstDay": {
+																	"type": "integer"
+																},
+																"FullRateDeprAmt": {
+																	"type": "integer"
+																},
+																"HalfRateDeprAmt": {
+																	"type": "integer"
+																},
+																"DepreciationAtFullRate": {
+																	"type": "integer"
+																},
+																"DepreciationAtHalfRate": {
+																	"type": "integer"
+																},
+																"TotalDepreciation": {
+																	"type": "integer"
+																},
+																"NetAggregateDepreciation": {
+																	"type": "integer"
+																},
+																"WDVLastDay": {
+																	"type": "integer"
+																}
+															}
+														}
+													}
+												},
+												"Rate30": {
+													"type": "object",
+													"properties": {
+														"DepreciationDetail": {
+															"type": "object",
+															"properties": {
+																"AdjustedWDVFirstDay": {
+																	"type": "integer"
+																},
+																"FullRateDeprAmt": {
+																	"type": "integer"
+																},
+																"HalfRateDeprAmt": {
+																	"type": "integer"
+																},
+																"DepreciationAtFullRate": {
+																	"type": "integer"
+																},
+																"DepreciationAtHalfRate": {
+																	"type": "integer"
+																},
+																"TotalDepreciation": {
+																	"type": "integer"
+																},
+																"NetAggregateDepreciation": {
+																	"type": "integer"
+																},
+																"WDVLastDay": {
+																	"type": "integer"
+																}
+															}
+														}
+													}
+												},
+												"Rate40": {
+													"type": "object",
+													"properties": {
+														"DepreciationDetail": {
+															"type": "object",
+															"properties": {
+																"AdjustedWDVFirstDay": {
+																	"type": "integer"
+																},
+																"FullRateDeprAmt": {
+																	"type": "integer"
+																},
+																"HalfRateDeprAmt": {
+																	"type": "integer"
+																},
+																"DepreciationAtFullRate": {
+																	"type": "integer"
+																},
+																"DepreciationAtHalfRate": {
+																	"type": "integer"
+																},
+																"TotalDepreciation": {
+																	"type": "integer"
+																},
+																"NetAggregateDepreciation": {
+																	"type": "integer"
+																},
+																"WDVLastDay": {
+																	"type": "integer"
+																}
+															}
+														}
+													}
+												},
+												"Rate45": {
+													"type": "object",
+													"properties": {
+														"DepreciationDetail": {
+															"type": "object",
+															"properties": {
+																"FullRateDeprAmt": {
+																	"type": "integer"
+																},
+																"DepreciationAtFullRate": {
+																	"type": "integer"
+																},
+																"TotalDepreciation": {
+																	"type": "integer"
+																},
+																"NetAggregateDepreciation": {
+																	"type": "integer"
+																},
+																"WDVLastDay": {
+																	"type": "integer"
+																}
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+								},
+								"ScheduleDOA": {
+									"type": "object",
+									"properties": {
+										"Land": {
+											"type": "object",
+											"properties": {
+												"DepreciationDetail": {
+													"type": "object",
+													"properties": {
+														"WDVLastDay": {
+															"type": "integer"
+														}
+													}
+												}
+											}
+										},
+										"Building": {
+											"type": "object",
+											"properties": {
+												"Rate5": {
+													"type": "object",
+													"properties": {
+														"DepreciationDetail": {
+															"type": "object",
+															"properties": {
+																"FullRateDeprAmt": {
+																	"type": "integer"
+																},
+																"HalfRateDeprAmt": {
+																	"type": "integer"
+																},
+																"DepreciationAtFullRate": {
+																	"type": "integer"
+																},
+																"DepreciationAtHalfRate": {
+																	"type": "integer"
+																},
+																"TotalDepreciation": {
+																	"type": "integer"
+																},
+																"NetAggregateDepreciation": {
+																	"type": "integer"
+																},
+																"WDVLastDay": {
+																	"type": "integer"
+																}
+															}
+														}
+													}
+												},
+												"Rate10": {
+													"type": "object",
+													"properties": {
+														"DepreciationDetail": {
+															"type": "object",
+															"properties": {
+																"FullRateDeprAmt": {
+																	"type": "integer"
+																},
+																"HalfRateDeprAmt": {
+																	"type": "integer"
+																},
+																"DepreciationAtFullRate": {
+																	"type": "integer"
+																},
+																"DepreciationAtHalfRate": {
+																	"type": "integer"
+																},
+																"TotalDepreciation": {
+																	"type": "integer"
+																},
+																"NetAggregateDepreciation": {
+																	"type": "integer"
+																},
+																"WDVLastDay": {
+																	"type": "integer"
+																}
+															}
+														}
+													}
+												},
+												"Rate40": {
+													"type": "object",
+													"properties": {
+														"DepreciationDetail": {
+															"type": "object",
+															"properties": {
+																"FullRateDeprAmt": {
+																	"type": "integer"
+																},
+																"HalfRateDeprAmt": {
+																	"type": "integer"
+																},
+																"DepreciationAtFullRate": {
+																	"type": "integer"
+																},
+																"DepreciationAtHalfRate": {
+																	"type": "integer"
+																},
+																"TotalDepreciation": {
+																	"type": "integer"
+																},
+																"NetAggregateDepreciation": {
+																	"type": "integer"
+																},
+																"WDVLastDay": {
+																	"type": "integer"
+																}
+															}
+														}
+													}
+												}
+											}
+										},
+										"FurnitureFittings": {
+											"type": "object",
+											"properties": {
+												"Rate10": {
+													"type": "object",
+													"properties": {
+														"DepreciationDetail": {
+															"type": "object",
+															"properties": {
+																"FullRateDeprAmt": {
+																	"type": "integer"
+																},
+																"HalfRateDeprAmt": {
+																	"type": "integer"
+																},
+																"DepreciationAtFullRate": {
+																	"type": "integer"
+																},
+																"DepreciationAtHalfRate": {
+																	"type": "integer"
+																},
+																"TotalDepreciation": {
+																	"type": "integer"
+																},
+																"NetAggregateDepreciation": {
+																	"type": "integer"
+																},
+																"WDVLastDay": {
+																	"type": "integer"
+																}
+															}
+														}
+													}
+												}
+											}
+										},
+										"IntangibleAssets": {
+											"type": "object",
+											"properties": {
+												"Rate25": {
+													"type": "object",
+													"properties": {
+														"DepreciationDetail": {
+															"type": "object",
+															"properties": {
+																"FullRateDeprAmt": {
+																	"type": "integer"
+																},
+																"HalfRateDeprAmt": {
+																	"type": "integer"
+																},
+																"DepreciationAtFullRate": {
+																	"type": "integer"
+																},
+																"DepreciationAtHalfRate": {
+																	"type": "integer"
+																},
+																"TotalDepreciation": {
+																	"type": "integer"
+																},
+																"NetAggregateDepreciation": {
+																	"type": "integer"
+																},
+																"WDVLastDay": {
+																	"type": "integer"
+																}
+															}
+														}
+													}
+												}
+											}
+										},
+										"Ships": {
+											"type": "object",
+											"properties": {
+												"Rate20": {
+													"type": "object",
+													"properties": {
+														"DepreciationDetail": {
+															"type": "object",
+															"properties": {
+																"FullRateDeprAmt": {
+																	"type": "integer"
+																},
+																"HalfRateDeprAmt": {
+																	"type": "integer"
+																},
+																"DepreciationAtFullRate": {
+																	"type": "integer"
+																},
+																"DepreciationAtHalfRate": {
+																	"type": "integer"
+																},
+																"TotalDepreciation": {
+																	"type": "integer"
+																},
+																"NetAggregateDepreciation": {
+																	"type": "integer"
+																},
+																"WDVLastDay": {
+																	"type": "integer"
+																}
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+								},
+								"ScheduleDEP": {
+									"type": "object",
+									"properties": {
+										"SummaryFromDeprSch": {
+											"type": "object",
+											"properties": {
+												"PlantMachinerySummary": {
+													"type": "object",
+													"properties": {
+														"DeprBlockTot15Percent": {
+															"type": "integer"
+														},
+														"DeprBlockTot30Percent": {
+															"type": "integer"
+														},
+														"DeprBlockTot40Percent": {
+															"type": "integer"
+														},
+														"DeprBlockTot45Percent": {
+															"type": "integer"
+														},
+														"TotPlntMach": {
+															"type": "integer"
+														}
+													}
+												},
+												"BuildingSummary": {
+													"type": "object",
+													"properties": {
+														"DeprBlockTot5Percent": {
+															"type": "integer"
+														},
+														"DeprBlockTot10Percent": {
+															"type": "integer"
+														},
+														"DeprBlockTot40Percent": {
+															"type": "integer"
+														},
+														"TotBuildng": {
+															"type": "integer"
+														}
+													}
+												},
+												"FurnitureSummary": {
+													"type": "integer"
+												},
+												"IntangibleAssetSummary": {
+													"type": "integer"
+												},
+												"ShipsSummary": {
+													"type": "integer"
+												},
+												"TotalDepreciation": {
+													"type": "integer"
+												}
+											}
+										}
+									}
+								},
+								"ScheduleDCG": {
+									"type": "object",
+									"properties": {
+										"SummaryFromDeprSchCG": {
+											"type": "object",
+											"properties": {
+												"PlantMachinerySummaryCG": {
+													"type": "object",
+													"properties": {
+														"DeprBlockTot15Percent": {
+															"type": "integer"
+														},
+														"DeprBlockTot30Percent": {
+															"type": "integer"
+														},
+														"DeprBlockTot40Percent": {
+															"type": "integer"
+														},
+														"DeprBlockTot45Percent": {
+															"type": "integer"
+														},
+														"TotPlntMach": {
+															"type": "integer"
+														}
+													}
+												},
+												"BuildingSummaryCG": {
+													"type": "object",
+													"properties": {
+														"DeprBlockTot5Percent": {
+															"type": "integer"
+														},
+														"DeprBlockTot10Percent": {
+															"type": "integer"
+														},
+														"DeprBlockTot40Percent": {
+															"type": "integer"
+														},
+														"TotBuildng": {
+															"type": "integer"
+														}
+													}
+												},
+												"FurnitureSummary": {
+													"type": "integer"
+												},
+												"IntangibleAssetSummary": {
+													"type": "integer"
+												},
+												"ShipsSummary": {
+													"type": "integer"
+												},
+												"TotalDepreciation": {
+													"type": "integer"
+												}
+											}
+										}
+									}
+								},
+								"ScheduleCGFor23": {
+									"type": "object",
+									"properties": {
+										"ShortTermCapGainFor23": {
+											"type": "object",
+											"properties": {
+												"SlumpSaleInStcg": {
+													"type": "object",
+													"properties": {
+														"CapgainonAssets": {
+															"type": "integer"
+														}
+													}
+												},
+												"NRISecur115AD": {
+													"type": "object",
+													"properties": {
+														"DeductSec48": {
+															"type": "object",
+															"properties": {
+																"TotalDedn": {
+																	"type": "integer"
+																}
+															}
+														},
+														"FullValueConsdSec50CA": {
+															"type": "integer"
+														},
+														"FullConsideration": {
+															"type": "integer"
+														},
+														"BalanceCG": {
+															"type": "integer"
+														},
+														"CapgainonAssets": {
+															"type": "integer"
+														}
+													}
+												},
+												"SaleOnOtherAssets": {
+													"type": "object",
+													"properties": {
+														"DeductSec48": {
+															"type": "object",
+															"properties": {
+																"TotalDedn": {
+																	"type": "integer"
+																}
+															}
+														},
+														"ExemptionOrDednUs54": {
+															"type": "object",
+															"properties": {
+																"ExemptionGrandTotal": {
+																	"type": "integer"
+																}
+															}
+														},
+														"FullValueConsdSec50CA": {
+															"type": "integer"
+														},
+														"FullConsideration": {
+															"type": "integer"
+														},
+														"BalanceCG": {
+															"type": "integer"
+														},
+														"DeemedStcgOnAssets": {
+															"type": "integer"
+														},
+														"CapgainonAssets": {
+															"type": "integer"
+														}
+													}
+												},
+												"TotalAmtDeemedStcg": {
+													"type": "integer"
+												},
+												"PassThrIncNatureSTCG": {
+													"type": "integer"
+												},
+												"TotalAmtNotTaxUsDTAAStcg": {
+													"type": "integer"
+												},
+												"TotalAmtTaxUsDTAAStcg": {
+													"type": "integer"
+												},
+												"TotalSTCG": {
+													"type": "integer"
+												}
+											}
+										},
+										"LongTermCapGain23": {
+											"type": "object",
+											"properties": {
+												"SlumpSaleInLtcg": {
+													"type": "object",
+													"properties": {
+														"ExemptionOrDednUs54": {
+															"type": "object",
+															"properties": {
+																"ExemptionGrandTotal": {
+																	"type": "integer"
+																}
+															}
+														},
+														"SlumpBalance": {
+															"type": "integer"
+														},
+														"CapgainonAssets": {
+															"type": "integer"
+														}
+													}
+												},
+												"SaleofBondsDebntr": {
+													"type": "object",
+													"properties": {
+														"DeductSec48": {
+															"type": "object",
+															"properties": {
+																"TotalDedn": {
+																	"type": "integer"
+																}
+															}
+														},
+														"BalanceCG": {
+															"type": "integer"
+														},
+														"CapgainonAssets": {
+															"type": "integer"
+														}
+													}
+												},
+												"SaleOfEquityShareUs112A": {
+													"type": "object",
+													"properties": {
+														"BalanceCG": {
+															"type": "integer"
+														},
+														"CapgainonAssets": {
+															"type": "integer"
+														}
+													}
+												},
+												"NRIProvisoSec48": {
+													"type": "object",
+													"properties": {
+														"BalanceCG": {
+															"type": "integer"
+														}
+													}
+												},
+												"NRISaleOfEquityShareUs112A": {
+													"type": "object",
+													"properties": {
+														"BalanceCG": {
+															"type": "integer"
+														},
+														"CapgainonAssets": {
+															"type": "integer"
+														}
+													}
+												},
+												"NRISaleofForeignAsset": {
+													"type": "object",
+													"properties": {
+														"BalonSpeciAsset": {
+															"type": "integer"
+														},
+														"BalOtherthanSpecAsset": {
+															"type": "integer"
+														}
+													}
+												},
+												"SaleofAssetNA": {
+													"type": "object",
+													"properties": {
+														"DeductSec48": {
+															"type": "object",
+															"properties": {
+																"TotalDedn": {
+																	"type": "integer"
+																}
+															}
+														},
+														"ExemptionOrDednUs54": {
+															"type": "object",
+															"properties": {
+																"ExemptionGrandTotal": {
+																	"type": "integer"
+																}
+															}
+														},
+														"FullValueConsdSec50CA": {
+															"type": "integer"
+														},
+														"FullConsideration": {
+															"type": "integer"
+														},
+														"BalanceCG": {
+															"type": "integer"
+														},
+														"CapgainonAssets": {
+															"type": "integer"
+														}
+													}
+												},
+												"TotalAmtDeemedLtcg": {
+													"type": "integer"
+												},
+												"PassThrIncNatureLTCG": {
+													"type": "integer"
+												},
+												"TotalAmtNotTaxUsDTAALtcg": {
+													"type": "integer"
+												},
+												"TotalAmtTaxUsDTAALtcg": {
+													"type": "integer"
+												},
+												"TotalLTCG": {
+													"type": "integer"
+												}
+											}
+										},
+										"DeducClaimInfo": {
+											"type": "object",
+											"properties": {
+												"TotDeductClaim": {
+													"type": "integer"
+												}
+											}
+										},
+										"CurrYrLosses": {
+											"type": "object",
+											"properties": {
+												"InLossSetOff": {
+													"type": "object",
+													"properties": {
+														"StclSetoff15Per": {
+															"type": "string"
+														},
+														"StclSetoff30Per": {
+															"type": "string"
+														},
+														"StclSetoffAppRate": {
+															"type": "string"
+														},
+														"StclSetoffDTAARate": {
+															"type": "string"
+														},
+														"LtclSetOff10Per": {
+															"type": "string"
+														},
+														"LtclSetOff20Per": {
+															"type": "string"
+														},
+														"LtclSetOffDTAARate": {
+															"type": "string"
+														}
+													}
+												},
+												"InStcg15Per": {
+													"type": "object",
+													"properties": {
+														"CurrYearIncome": {
+															"type": "integer"
+														},
+														"CurrYrCapGain": {
+															"type": "integer"
+														}
+													}
+												},
+												"InStcg30Per": {
+													"type": "object",
+													"properties": {
+														"CurrYearIncome": {
+															"type": "integer"
+														},
+														"CurrYrCapGain": {
+															"type": "integer"
+														}
+													}
+												},
+												"InStcgAppRate": {
+													"type": "object",
+													"properties": {
+														"CurrYearIncome": {
+															"type": "integer"
+														},
+														"CurrYrCapGain": {
+															"type": "integer"
+														}
+													}
+												},
+												"InStcgDTAARate": {
+													"type": "object",
+													"properties": {
+														"CurrYearIncome": {
+															"type": "integer"
+														},
+														"CurrYrCapGain": {
+															"type": "integer"
+														}
+													}
+												},
+												"InLtcg10Per": {
+													"type": "object",
+													"properties": {
+														"CurrYearIncome": {
+															"type": "integer"
+														},
+														"CurrYrCapGain": {
+															"type": "integer"
+														}
+													}
+												},
+												"InLtcg20Per": {
+													"type": "object",
+													"properties": {
+														"CurrYearIncome": {
+															"type": "integer"
+														},
+														"CurrYrCapGain": {
+															"type": "integer"
+														}
+													}
+												},
+												"InLtcgDTAARate": {
+													"type": "object",
+													"properties": {
+														"CurrYearIncome": {
+															"type": "integer"
+														},
+														"CurrYrCapGain": {
+															"type": "integer"
+														}
+													}
+												},
+												"TotLossSetOff": {
+													"type": "object",
+													"properties": {
+														"StclSetoff15Per": {
+															"type": "integer"
+														},
+														"StclSetoff30Per": {
+															"type": "integer"
+														},
+														"StclSetoffAppRate": {
+															"type": "integer"
+														},
+														"StclSetoffDTAARate": {
+															"type": "integer"
+														},
+														"LtclSetOff10Per": {
+															"type": "integer"
+														},
+														"LtclSetOff20Per": {
+															"type": "integer"
+														},
+														"LtclSetOffDTAARate": {
+															"type": "integer"
+														}
+													}
+												},
+												"LossRemainSetOff": {
+													"type": "object",
+													"properties": {
+														"StclSetoff15Per": {
+															"type": "integer"
+														},
+														"StclSetoff30Per": {
+															"type": "integer"
+														},
+														"StclSetoffAppRate": {
+															"type": "integer"
+														},
+														"StclSetoffDTAARate": {
+															"type": "integer"
+														},
+														"LtclSetOff10Per": {
+															"type": "integer"
+														},
+														"LtclSetOff20Per": {
+															"type": "integer"
+														},
+														"LtclSetOffDTAARate": {
+															"type": "integer"
+														}
+													}
+												}
+											}
+										},
+										"TotScheduleCGFor23": {
+											"type": "integer"
+										}
+									}
+								},
+								"Schedule112A": {
+									"type": "object",
+									"properties": {
+										"SaleValue112A": {
+											"type": "integer"
+										},
+										"CostAcqWithoutIndx112A": {
+											"type": "integer"
+										},
+										"AcquisitionCost112A": {
+											"type": "integer"
+										},
+										"LTCGBeforelowerB1B2112A": {
+											"type": "integer"
+										},
+										"FairMktValueCapAst112A": {
+											"type": "integer"
+										},
+										"ExpExclCnctTransfer112A": {
+											"type": "integer"
+										},
+										"Deductions112A": {
+											"type": "integer"
+										},
+										"Balance112A": {
+											"type": "integer"
+										}
+									}
+								},
+								"ScheduleOS": {
+									"type": "object",
+									"properties": {
+										"IncOthThanOwnRaceHorse": {
+											"type": "object",
+											"properties": {
+												"TaxAccumulatedBalRecPF": {
+													"type": "object",
+													"properties": {
+														"TotalIncomeBenefit": {
+															"type": "integer"
+														},
+														"TotalTaxBenefit": {
+															"type": "integer"
+														}
+													}
+												},
+												"IncChargblSplRateOS": {
+													"type": "object",
+													"properties": {
+														"TotalAmtTaxUsDTAASchOs": {
+															"type": "integer"
+														}
+													}
+												},
+												"Deductions": {
+													"type": "object",
+													"properties": {
+														"IntExp57": {
+															"type": "integer"
+														},
+														"DeductionUs57iia": {
+															"type": "integer"
+														},
+														"TotDeductions": {
+															"type": "integer"
+														}
+													}
+												},
+												"GrossIncChrgblTaxAtAppRate": {
+													"type": "integer"
+												},
+												"DividendGross": {
+													"type": "integer"
+												},
+												"DividendOthThan22e": {
+													"type": "integer"
+												},
+												"InterestGross": {
+													"type": "integer"
+												},
+												"IntrstFrmTermDeposit": {
+													"type": "integer"
+												},
+												"IntrstFrmOthers": {
+													"type": "integer"
+												},
+												"RentFromMachPlantBldgs": {
+													"type": "integer"
+												},
+												"Tot562x": {
+													"type": "integer"
+												},
+												"AnyOtherIncome": {
+													"type": "integer"
+												},
+												"IncChargeableSpecialRates": {
+													"type": "integer"
+												},
+												"LtryPzzlChrgblUs115BB": {
+													"type": "integer"
+												},
+												"IncChrgblUs115BBE": {
+													"type": "integer"
+												},
+												"OthersGross": {
+													"type": "integer"
+												},
+												"PassThrIncOSChrgblSplRate": {
+													"type": "integer"
+												},
+												"BalanceNoRaceHorse": {
+													"type": "integer"
+												}
+											}
+										},
+										"IncFromOwnHorse": {
+											"type": "object",
+											"properties": {
+												"BalanceOwnRaceHorse": {
+													"type": "integer"
+												}
+											}
+										},
+										"TotOthSrcNoRaceHorse": {
+											"type": "integer"
+										},
+										"IncChargeable": {
+											"type": "integer"
+										}
+									}
+								},
+								"ScheduleCYLA": {
+									"type": "object",
+									"properties": {
+										"Salary": {
+											"type": "object",
+											"properties": {
+												"IncCYLA": {
+													"type": "object",
+													"properties": {
+														"IncOfCurYrUnderThatHead": {
+															"type": "integer"
+														},
+														"IncOfCurYrAfterSetOff": {
+															"type": "integer"
+														}
+													}
+												}
+											}
+										},
+										"HP": {
+											"type": "object",
+											"properties": {
+												"IncCYLA": {
+													"type": "object",
+													"properties": {
+														"IncOfCurYrUnderThatHead": {
+															"type": "integer"
+														},
+														"IncOfCurYrAfterSetOff": {
+															"type": "integer"
+														}
+													}
+												}
+											}
+										},
+										"BusProfExclSpecProf": {
+											"type": "object",
+											"properties": {
+												"IncCYLA": {
+													"type": "object",
+													"properties": {
+														"IncOfCurYrUnderThatHead": {
+															"type": "integer"
+														},
+														"IncOfCurYrAfterSetOff": {
+															"type": "integer"
+														}
+													}
+												}
+											}
+										},
+										"SpeculativeInc": {
+											"type": "object",
+											"properties": {
+												"IncCYLA": {
+													"type": "object",
+													"properties": {
+														"IncOfCurYrUnderThatHead": {
+															"type": "integer"
+														},
+														"IncOfCurYrAfterSetOff": {
+															"type": "integer"
+														}
+													}
+												}
+											}
+										},
+										"SpecifiedInc": {
+											"type": "object",
+											"properties": {
+												"IncCYLA": {
+													"type": "object",
+													"properties": {
+														"IncOfCurYrUnderThatHead": {
+															"type": "integer"
+														},
+														"IncOfCurYrAfterSetOff": {
+															"type": "integer"
+														}
+													}
+												}
+											}
+										},
+										"STCG15Per": {
+											"type": "object",
+											"properties": {
+												"IncCYLA": {
+													"type": "object",
+													"properties": {
+														"IncOfCurYrUnderThatHead": {
+															"type": "integer"
+														},
+														"IncOfCurYrAfterSetOff": {
+															"type": "integer"
+														}
+													}
+												}
+											}
+										},
+										"STCG30Per": {
+											"type": "object",
+											"properties": {
+												"IncCYLA": {
+													"type": "object",
+													"properties": {
+														"IncOfCurYrUnderThatHead": {
+															"type": "integer"
+														},
+														"IncOfCurYrAfterSetOff": {
+															"type": "integer"
+														}
+													}
+												}
+											}
+										},
+										"STCGAppRate": {
+											"type": "object",
+											"properties": {
+												"IncCYLA": {
+													"type": "object",
+													"properties": {
+														"IncOfCurYrUnderThatHead": {
+															"type": "integer"
+														},
+														"IncOfCurYrAfterSetOff": {
+															"type": "integer"
+														}
+													}
+												}
+											}
+										},
+										"STCGDTAARate": {
+											"type": "object",
+											"properties": {
+												"IncCYLA": {
+													"type": "object",
+													"properties": {
+														"IncOfCurYrUnderThatHead": {
+															"type": "integer"
+														},
+														"IncOfCurYrAfterSetOff": {
+															"type": "integer"
+														}
+													}
+												}
+											}
+										},
+										"LTCG10Per": {
+											"type": "object",
+											"properties": {
+												"IncCYLA": {
+													"type": "object",
+													"properties": {
+														"IncOfCurYrUnderThatHead": {
+															"type": "integer"
+														},
+														"IncOfCurYrAfterSetOff": {
+															"type": "integer"
+														}
+													}
+												}
+											}
+										},
+										"LTCG20Per": {
+											"type": "object",
+											"properties": {
+												"IncCYLA": {
+													"type": "object",
+													"properties": {
+														"IncOfCurYrUnderThatHead": {
+															"type": "integer"
+														},
+														"IncOfCurYrAfterSetOff": {
+															"type": "integer"
+														}
+													}
+												}
+											}
+										},
+										"LTCGDTAARate": {
+											"type": "object",
+											"properties": {
+												"IncCYLA": {
+													"type": "object",
+													"properties": {
+														"IncOfCurYrUnderThatHead": {
+															"type": "integer"
+														},
+														"IncOfCurYrAfterSetOff": {
+															"type": "integer"
+														}
+													}
+												}
+											}
+										},
+										"OthSrcExclRaceHorse": {
+											"type": "object",
+											"properties": {
+												"IncCYLA": {
+													"type": "object",
+													"properties": {
+														"IncOfCurYrUnderThatHead": {
+															"type": "integer"
+														},
+														"IncOfCurYrAfterSetOff": {
+															"type": "integer"
+														}
+													}
+												}
+											}
+										},
+										"OthSrcRaceHorse": {
+											"type": "object",
+											"properties": {
+												"IncCYLA": {
+													"type": "object",
+													"properties": {
+														"IncOfCurYrUnderThatHead": {
+															"type": "integer"
+														},
+														"IncOfCurYrAfterSetOff": {
+															"type": "integer"
+														}
+													}
+												}
+											}
+										},
+										"IncOSDTAA": {
+											"type": "object",
+											"properties": {
+												"IncCYLA": {
+													"type": "object",
+													"properties": {
+														"IncOfCurYrUnderThatHead": {
+															"type": "integer"
+														},
+														"IncOfCurYrAfterSetOff": {
+															"type": "integer"
+														}
+													}
+												}
+											}
+										},
+										"TotalCurYr": {
+											"type": "object",
+											"properties": {
+												"TotHPlossCurYr": {
+													"type": "integer"
+												},
+												"TotBusLoss": {
+													"type": "integer"
+												},
+												"TotOthSrcLossNoRaceHorse": {
+													"type": "integer"
+												}
+											}
+										},
+										"TotalLossSetOff": {
+											"type": "object",
+											"properties": {
+												"TotHPlossCurYrSetoff": {
+													"type": "integer"
+												},
+												"TotBusLossSetoff": {
+													"type": "integer"
+												},
+												"TotOthSrcLossNoRaceHorseSetoff": {
+													"type": "integer"
+												}
+											}
+										},
+										"LossRemAftSetOff": {
+											"type": "object",
+											"properties": {
+												"BalHPlossCurYrAftSetoff": {
+													"type": "integer"
+												},
+												"BalBusLossAftSetoff": {
+													"type": "integer"
+												},
+												"BalOthSrcLossNoRaceHorseAftSetoff": {
+													"type": "integer"
+												}
+											}
+										}
+									}
+								},
+								"ScheduleBFLA": {
+									"type": "object",
+									"properties": {
+										"Salary": {
+											"type": "object",
+											"properties": {
+												"IncBFLA": {
+													"type": "object",
+													"properties": {
+														"IncOfCurYrUndHeadFromCYLA": {
+															"type": "integer"
+														},
+														"IncOfCurYrAfterSetOffBFLosses": {
+															"type": "integer"
+														}
+													}
+												}
+											}
+										},
+										"HP": {
+											"type": "object",
+											"properties": {
+												"IncBFLA": {
+													"type": "object",
+													"properties": {
+														"IncOfCurYrUndHeadFromCYLA": {
+															"type": "integer"
+														},
+														"IncOfCurYrAfterSetOffBFLosses": {
+															"type": "integer"
+														}
+													}
+												}
+											}
+										},
+										"BusProfExclSpecProf": {
+											"type": "object",
+											"properties": {
+												"IncBFLA": {
+													"type": "object",
+													"properties": {
+														"IncOfCurYrUndHeadFromCYLA": {
+															"type": "integer"
+														},
+														"IncOfCurYrAfterSetOffBFLosses": {
+															"type": "integer"
+														}
+													}
+												}
+											}
+										},
+										"SpeculativeInc": {
+											"type": "object",
+											"properties": {
+												"IncBFLA": {
+													"type": "object",
+													"properties": {
+														"IncOfCurYrUndHeadFromCYLA": {
+															"type": "integer"
+														},
+														"IncOfCurYrAfterSetOffBFLosses": {
+															"type": "integer"
+														}
+													}
+												}
+											}
+										},
+										"SpecifiedInc": {
+											"type": "object",
+											"properties": {
+												"IncBFLA": {
+													"type": "object",
+													"properties": {
+														"IncOfCurYrUndHeadFromCYLA": {
+															"type": "integer"
+														},
+														"IncOfCurYrAfterSetOffBFLosses": {
+															"type": "integer"
+														}
+													}
+												}
+											}
+										},
+										"STCG15Per": {
+											"type": "object",
+											"properties": {
+												"IncBFLA": {
+													"type": "object",
+													"properties": {
+														"IncOfCurYrUndHeadFromCYLA": {
+															"type": "integer"
+														},
+														"IncOfCurYrAfterSetOffBFLosses": {
+															"type": "integer"
+														}
+													}
+												}
+											}
+										},
+										"STCG30Per": {
+											"type": "object",
+											"properties": {
+												"IncBFLA": {
+													"type": "object",
+													"properties": {
+														"IncOfCurYrUndHeadFromCYLA": {
+															"type": "integer"
+														},
+														"IncOfCurYrAfterSetOffBFLosses": {
+															"type": "integer"
+														}
+													}
+												}
+											}
+										},
+										"STCGAppRate": {
+											"type": "object",
+											"properties": {
+												"IncBFLA": {
+													"type": "object",
+													"properties": {
+														"IncOfCurYrUndHeadFromCYLA": {
+															"type": "integer"
+														},
+														"IncOfCurYrAfterSetOffBFLosses": {
+															"type": "integer"
+														}
+													}
+												}
+											}
+										},
+										"STCGDTAARate": {
+											"type": "object",
+											"properties": {
+												"IncBFLA": {
+													"type": "object",
+													"properties": {
+														"IncOfCurYrUndHeadFromCYLA": {
+															"type": "integer"
+														},
+														"IncOfCurYrAfterSetOffBFLosses": {
+															"type": "integer"
+														}
+													}
+												}
+											}
+										},
+										"LTCG10Per": {
+											"type": "object",
+											"properties": {
+												"IncBFLA": {
+													"type": "object",
+													"properties": {
+														"IncOfCurYrUndHeadFromCYLA": {
+															"type": "integer"
+														},
+														"IncOfCurYrAfterSetOffBFLosses": {
+															"type": "integer"
+														}
+													}
+												}
+											}
+										},
+										"LTCG20Per": {
+											"type": "object",
+											"properties": {
+												"IncBFLA": {
+													"type": "object",
+													"properties": {
+														"IncOfCurYrUndHeadFromCYLA": {
+															"type": "integer"
+														},
+														"IncOfCurYrAfterSetOffBFLosses": {
+															"type": "integer"
+														}
+													}
+												}
+											}
+										},
+										"LTCGDTAARate": {
+											"type": "object",
+											"properties": {
+												"IncBFLA": {
+													"type": "object",
+													"properties": {
+														"IncOfCurYrUndHeadFromCYLA": {
+															"type": "integer"
+														},
+														"IncOfCurYrAfterSetOffBFLosses": {
+															"type": "integer"
+														}
+													}
+												}
+											}
+										},
+										"OthSrcExclRaceHorse": {
+											"type": "object",
+											"properties": {
+												"IncBFLA": {
+													"type": "object",
+													"properties": {
+														"IncOfCurYrUndHeadFromCYLA": {
+															"type": "integer"
+														},
+														"IncOfCurYrAfterSetOffBFLosses": {
+															"type": "integer"
+														}
+													}
+												}
+											}
+										},
+										"OthSrcRaceHorse": {
+											"type": "object",
+											"properties": {
+												"IncBFLA": {
+													"type": "object",
+													"properties": {
+														"IncOfCurYrUndHeadFromCYLA": {
+															"type": "integer"
+														},
+														"IncOfCurYrAfterSetOffBFLosses": {
+															"type": "integer"
+														}
+													}
+												}
+											}
+										},
+										"IncOSDTAA": {
+											"type": "object",
+											"properties": {
+												"IncBFLA": {
+													"type": "object",
+													"properties": {
+														"IncOfCurYrUndHeadFromCYLA": {
+															"type": "integer"
+														},
+														"IncOfCurYrAfterSetOffBFLosses": {
+															"type": "integer"
+														}
+													}
+												}
+											}
+										},
+										"TotalBFLossSetOff": {
+											"type": "object",
+											"properties": {
+												"TotBFLossSetoff": {
+													"type": "integer"
+												},
+												"TotUnabsorbedDeprSetoff": {
+													"type": "integer"
+												},
+												"TotAllUs35cl4Setoff": {
+													"type": "integer"
+												}
+											}
+										},
+										"IncomeOfCurrYrAftCYLABFLA": {
+											"type": "integer"
+										}
+									}
+								},
+								"ScheduleCFL": {
+									"type": "object",
+									"properties": {
+										"LossCFCurrentAssmntYear": {
+											"type": "object",
+											"properties": {
+												"CarryFwdLossDetail": {
+													"type": "object",
+													"properties": {
+														"DateOfFiling": {
+															"type": "string"
+														},
+														"TotalHPPTILossCF": {
+															"type": "integer"
+														},
+														"TotalSTCGPTILossCF": {
+															"type": "integer"
+														},
+														"TotalLTCGPTILossCF": {
+															"type": "integer"
+														},
+														"OthSrcLossRaceHorseCF": {
+															"type": "integer"
+														}
+													}
+												}
+											}
+										},
+										"TotalOfBFLossesEarlierYrs": {
+											"type": "object",
+											"properties": {
+												"LossSummaryDetail": {
+													"type": "object",
+													"properties": {
+														"TotalHPPTILossCF": {
+															"type": "integer"
+														},
+														"BusLossOthThanSpecLossCF": {
+															"type": "integer"
+														},
+														"LossFrmSpecBusCF": {
+															"type": "integer"
+														},
+														"LossFrmSpecifiedBusCF": {
+															"type": "integer"
+														},
+														"TotalSTCGPTILossCF": {
+															"type": "integer"
+														},
+														"TotalLTCGPTILossCF": {
+															"type": "integer"
+														},
+														"OthSrcLossRaceHorseCF": {
+															"type": "integer"
+														}
+													}
+												}
+											}
+										},
+										"AdjTotBFLossInBFLA": {
+											"type": "object",
+											"properties": {
+												"LossSummaryDetail": {
+													"type": "object",
+													"properties": {
+														"TotalHPPTILossCF": {
+															"type": "integer"
+														},
+														"LossFrmSpecBusCF": {
+															"type": "integer"
+														},
+														"LossFrmSpecifiedBusCF": {
+															"type": "integer"
+														},
+														"OthSrcLossRaceHorseCF": {
+															"type": "integer"
+														}
+													}
+												}
+											}
+										},
+										"CurrentAYloss": {
+											"type": "object",
+											"properties": {
+												"LossSummaryDetail": {
+													"type": "object",
+													"properties": {
+														"TotalHPPTILossCF": {
+															"type": "integer"
+														},
+														"BusLossOthThanSpecLossCF": {
+															"type": "integer"
+														},
+														"LossFrmSpecBusCF": {
+															"type": "string"
+														},
+														"TotalSTCGPTILossCF": {
+															"type": "integer"
+														},
+														"TotalLTCGPTILossCF": {
+															"type": "integer"
+														}
+													}
+												}
+											}
+										},
+										"TotalLossCFSummary": {
+											"type": "object",
+											"properties": {
+												"LossSummaryDetail": {
+													"type": "object",
+													"properties": {
+														"TotalHPPTILossCF": {
+															"type": "integer"
+														},
+														"BusLossOthThanSpecLossCF": {
+															"type": "integer"
+														},
+														"LossFrmSpecBusCF": {
+															"type": "integer"
+														},
+														"LossFrmSpecifiedBusCF": {
+															"type": "integer"
+														},
+														"TotalSTCGPTILossCF": {
+															"type": "integer"
+														},
+														"TotalLTCGPTILossCF": {
+															"type": "integer"
+														},
+														"OthSrcLossRaceHorseCF": {
+															"type": "integer"
+														}
+													}
+												}
+											}
+										}
+									}
+								},
+								"ITR3ScheduleUD": {
+									"type": "object",
+									"properties": {
+										"CurrAssYr": {
+											"type": "string"
+										},
+										"TotBFUDepritAmt": {
+											"type": "integer"
+										},
+										"TotAdjustAccTax115BACAmt": {
+											"type": "integer"
+										},
+										"TotCurYrdepritSetoffInc": {
+											"type": "integer"
+										},
+										"TotDepritBalCFNY": {
+											"type": "integer"
+										},
+										"TotBFUAllowAmt": {
+											"type": "integer"
+										},
+										"TotCurYrAllowSetoffInc": {
+											"type": "integer"
+										},
+										"TotalBalCFNY": {
+											"type": "integer"
+										}
+									}
+								},
+								"Schedule80D": {
+									"type": "object",
+									"properties": {
+										"Sec80DSelfFamSrCtznHealth": {
+											"type": "object",
+											"properties": {
+												"SeniorCitizenFlag": {
+													"type": "string"
+												},
+												"SelfAndFamily": {
+													"type": "integer"
+												},
+												"SelfAndFamilySeniorCitizen": {
+													"type": "integer"
+												},
+												"ParentsSeniorCitizenFlag": {
+													"type": "string"
+												},
+												"Parents": {
+													"type": "integer"
+												},
+												"ParentsSeniorCitizen": {
+													"type": "integer"
+												},
+												"EligibleAmountOfDedn": {
+													"type": "integer"
+												}
+											}
+										}
+									}
+								},
+								"ScheduleVIA": {
+									"type": "object",
+									"properties": {
+										"UsrDeductUndChapVIA": {
+											"type": "object",
+											"properties": {
+												"Section80C": {
+													"type": "integer"
+												},
+												"Section80CCC": {
+													"type": "integer"
+												},
+												"Section80CCDEmployeeOrSE": {
+													"type": "integer"
+												},
+												"Section80CCD1B": {
+													"type": "integer"
+												},
+												"Section80CCDEmployer": {
+													"type": "integer"
+												},
+												"Section80D": {
+													"type": "integer"
+												},
+												"Section80DD": {
+													"type": "integer"
+												},
+												"Section80DDB": {
+													"type": "integer"
+												},
+												"Section80E": {
+													"type": "integer"
+												},
+												"Section80G": {
+													"type": "integer"
+												},
+												"TotPartBchapterVIA": {
+													"type": "integer"
+												},
+												"Section80IA": {
+													"type": "integer"
+												},
+												"Section80IB": {
+													"type": "integer"
+												},
+												"Section80IC": {
+													"type": "integer"
+												},
+												"TotPartCchapterVIA": {
+													"type": "integer"
+												},
+												"Section80TTA": {
+													"type": "integer"
+												},
+												"Section80UUsrType": {
+													"type": "string"
+												},
+												"Section80U": {
+													"type": "integer"
+												},
+												"TotPartCAandDchapterVIA": {
+													"type": "integer"
+												},
+												"TotalChapVIADeductions": {
+													"type": "integer"
+												}
+											}
+										},
+										"DeductUndChapVIA": {
+											"type": "object",
+											"properties": {
+												"Section80C": {
+													"type": "integer"
+												},
+												"Section80CCC": {
+													"type": "integer"
+												},
+												"Section80CCDEmployeeOrSE": {
+													"type": "integer"
+												},
+												"Section80CCD1B": {
+													"type": "integer"
+												},
+												"Section80CCDEmployer": {
+													"type": "integer"
+												},
+												"Section80D": {
+													"type": "integer"
+												},
+												"Section80E": {
+													"type": "integer"
+												},
+												"Section80EE": {
+													"type": "integer"
+												},
+												"Section80EEA": {
+													"type": "integer"
+												},
+												"Section80EEB": {
+													"type": "integer"
+												},
+												"Section80G": {
+													"type": "integer"
+												},
+												"Section80GG": {
+													"type": "integer"
+												},
+												"Section80GGC": {
+													"type": "integer"
+												},
+												"TotPartBchapterVIA": {
+													"type": "integer"
+												},
+												"Section80IA": {
+													"type": "integer"
+												},
+												"Section80IAB": {
+													"type": "integer"
+												},
+												"Section80IB": {
+													"type": "integer"
+												},
+												"Section80IBA": {
+													"type": "integer"
+												},
+												"Section80IC": {
+													"type": "integer"
+												},
+												"Section80JJA": {
+													"type": "integer"
+												},
+												"Section80JJAA": {
+													"type": "integer"
+												},
+												"Section80QQB": {
+													"type": "integer"
+												},
+												"Section80RRB": {
+													"type": "integer"
+												},
+												"TotPartCchapterVIA": {
+													"type": "integer"
+												},
+												"Section80TTA": {
+													"type": "integer"
+												},
+												"Section80TTB": {
+													"type": "integer"
+												},
+												"Section80U": {
+													"type": "string"
+												},
+												"TotPartCAandDchapterVIA": {
+													"type": "integer"
+												},
+												"TotalChapVIADeductions": {
+													"type": "integer"
+												}
+											}
+										}
+									}
+								},
+								"ScheduleAMT": {
+									"type": "object",
+									"properties": {
+										"AdjustmentSec115JC": {
+											"type": "object",
+											"properties": {
+												"DeductClaimSec6A": {
+													"type": "integer"
+												},
+												"DeductClaimSec10AA": {
+													"type": "integer"
+												},
+												"Total": {
+													"type": "integer"
+												}
+											}
+										},
+										"TotalIncItem11": {
+											"type": "integer"
+										},
+										"AdjustedUnderSec115JC": {
+											"type": "integer"
+										},
+										"TaxPayableUnderSec115JC": {
+											"type": "string"
+										}
+									}
+								},
+								"ScheduleAMTC": {
+									"type": "object",
+									"properties": {
+										"ScheduleAMTCDtls": {
+											"type": "array",
+											"items": {
+												"type": "object",
+												"properties": {
+													"AssYr": {
+														"type": "string"
+													},
+													"AmtCreditFwd": {
+														"type": "integer"
+													},
+													"AmtCreditSetOfEy": {
+														"type": "integer"
+													},
+													"AmtCreditBalBroughtFwd": {
+														"type": "string"
+													},
+													"BalAmtCreditCarryFwd": {
+														"type": "integer"
+													}
+												}
+											}
+										},
+										"TaxSection115JC": {
+											"type": "integer"
+										},
+										"TaxOthProvisions": {
+											"type": "integer"
+										},
+										"AmtTaxCreditAvailable": {
+											"type": "string"
+										},
+										"CurrAssYr": {
+											"type": "string"
+										},
+										"CurrYrAmtCreditFwd": {
+											"type": "integer"
+										},
+										"CurrYrCreditCarryFwd": {
+											"type": "integer"
+										},
+										"TotAMTGross": {
+											"type": "integer"
+										},
+										"TotSetOffEys": {
+											"type": "integer"
+										},
+										"TotBalBF": {
+											"type": "integer"
+										},
+										"TotAmtCreditUtilisedCY": {
+											"type": "integer"
+										},
+										"TotBalAMTCreditCF": {
+											"type": "integer"
+										},
+										"TaxSection115JD": {
+											"type": "integer"
+										},
+										"AmtLiabilityAvailable": {
+											"type": "integer"
+										}
+									}
+								},
+								"ScheduleSI": {
+									"type": "object",
+									"properties": {
+										"SplCodeRateTax": {
+											"type": "array",
+											"items": {
+												"type": "object",
+												"properties": {
+													"SecCode": {
+														"type": "string"
+													},
+													"SplRatePercent": {
+														"type": "string"
+													},
+													"SplRateInc": {
+														"type": "integer"
+													},
+													"SplRateIncTax": {
+														"type": "integer"
+													}
+												}
+											}
+										},
+										"TotSplRateInc": {
+											"type": "integer"
+										},
+										"TotSplRateIncTax": {
+											"type": "integer"
+										}
+									}
+								},
+								"ScheduleTPSA": {
+									"type": "object",
+									"properties": {
+										"AmtPrimaryAdjUs92CE_2A": {
+											"type": "integer"
+										},
+										"AdditionalIncTax18PercAbove": {
+											"type": "integer"
+										},
+										"Surcharge12Perc": {
+											"type": "integer"
+										},
+										"HealthEducationCess": {
+											"type": "integer"
+										},
+										"TotalAdditionalTax": {
+											"type": "integer"
+										},
+										"TaxesPaid": {
+											"type": "integer"
+										},
+										"NetTaxPayable": {
+											"type": "integer"
+										},
+										"TotalAmountDeposited": {
+											"type": "integer"
+										}
+									}
+								},
+								"PartB-TI": {
+									"type": "object",
+									"properties": {
+										"ProfBusGain": {
+											"type": "object",
+											"properties": {
+												"ProfGainNoSpecBus": {
+													"type": "integer"
+												},
+												"ProfGainSpecBus": {
+													"type": "integer"
+												},
+												"ProfGainSpecifiedBus": {
+													"type": "integer"
+												},
+												"ProfIncome115BBF": {
+													"type": "integer"
+												},
+												"TotProfBusGain": {
+													"type": "integer"
+												}
+											}
+										},
+										"CapGain": {
+											"type": "object",
+											"properties": {
+												"ShortTerm": {
+													"type": "object",
+													"properties": {
+														"ShortTerm15Per": {
+															"type": "integer"
+														},
+														"ShortTerm30Per": {
+															"type": "integer"
+														},
+														"ShortTermAppRate": {
+															"type": "integer"
+														},
+														"ShortTermSplRateDTAA": {
+															"type": "string"
+														},
+														"TotalShortTerm": {
+															"type": "integer"
+														}
+													}
+												},
+												"LongTerm": {
+													"type": "object",
+													"properties": {
+														"LongTerm10Per": {
+															"type": "integer"
+														},
+														"LongTerm20Per": {
+															"type": "integer"
+														},
+														"LongTermSplRateDTAA": {
+															"type": "integer"
+														},
+														"TotalLongTerm": {
+															"type": "integer"
+														}
+													}
+												},
+												"TotalCapGains": {
+													"type": "integer"
+												}
+											}
+										},
+										"IncFromOS": {
+											"type": "object",
+											"properties": {
+												"OtherSrcThanOwnRaceHorse": {
+													"type": "integer"
+												},
+												"IncChargblSplRate": {
+													"type": "integer"
+												},
+												"FromOwnRaceHorse": {
+													"type": "integer"
+												},
+												"TotIncFromOS": {
+													"type": "integer"
+												}
+											}
+										},
+										"DeductionsUndSchVIADtl": {
+											"type": "object",
+											"properties": {
+												"PartBchapterVIA": {
+													"type": "integer"
+												},
+												"PartCchapterVIA": {
+													"type": "integer"
+												},
+												"TotDeductUndSchVIA": {
+													"type": "integer"
+												}
+											}
+										},
+										"Salaries": {
+											"type": "integer"
+										},
+										"IncomeFromHP": {
+											"type": "integer"
+										},
+										"TotalTI": {
+											"type": "integer"
+										},
+										"CurrentYearLoss": {
+											"type": "integer"
+										},
+										"BalanceAfterSetoffLosses": {
+											"type": "integer"
+										},
+										"BroughtFwdLossesSetoff": {
+											"type": "integer"
+										},
+										"GrossTotalIncome": {
+											"type": "integer"
+										},
+										"IncChargeTaxSplRate111A112": {
+											"type": "integer"
+										},
+										"DeductionsUnder10Aor10AA": {
+											"type": "integer"
+										},
+										"TotalIncome": {
+											"type": "integer"
+										},
+										"IncChargeableTaxSplRates": {
+											"type": "integer"
+										},
+										"NetAgricultureIncomeOrOtherIncomeForRate": {
+											"type": "string"
+										},
+										"AggregateIncome": {
+											"type": "string"
+										},
+										"LossesOfCurrentYearCarriedFwd": {
+											"type": "integer"
+										},
+										"DeemedIncomeUs115JC": {
+											"type": "integer"
+										}
+									}
+								},
+								"PartB_TTI": {
+									"type": "object",
+									"properties": {
+										"ComputationOfTaxLiability": {
+											"type": "object",
+											"properties": {
+												"TaxPayableOnDeemedTI": {
+													"type": "object",
+													"properties": {
+														"TaxDeemedTISec115JC": {
+															"type": "integer"
+														},
+														"SurchargeOnAboveCrore": {
+															"type": "integer"
+														},
+														"EducationCess": {
+															"type": "integer"
+														},
+														"TotalTax": {
+															"type": "integer"
+														}
+													}
+												},
+												"TaxPayableOnTI": {
+													"type": "object",
+													"properties": {
+														"TaxAtNormalRatesOnAggrInc": {
+															"type": "integer"
+														},
+														"TaxAtSpecialRates": {
+															"type": "integer"
+														},
+														"RebateOnAgriInc": {
+															"type": "string"
+														},
+														"TaxPayableOnTotInc": {
+															"type": "integer"
+														},
+														"Rebate87A": {
+															"type": "integer"
+														},
+														"TaxPayableOnRebate": {
+															"type": "integer"
+														},
+														"Surcharge25ofSI": {
+															"type": "integer"
+														},
+														"Surcharge25ofSIBeforeMarginal": {
+															"type": "integer"
+														},
+														"SurchargeOnAboveCroreBeforeMarginal": {
+															"type": "integer"
+														},
+														"SurchargeOnAboveCrore": {
+															"type": "integer"
+														},
+														"TotalSurcharge": {
+															"type": "integer"
+														},
+														"EducationCess": {
+															"type": "integer"
+														},
+														"GrossTaxLiability": {
+															"type": "integer"
+														}
+													}
+												},
+												"GrossTaxPay": {
+													"type": "object",
+													"properties": {
+														"TaxInc17": {
+															"type": "integer"
+														},
+														"TaxDeferred17": {
+															"type": "integer"
+														}
+													}
+												},
+												"TaxRelief": {
+													"type": "object",
+													"properties": {
+														"Section89": {
+															"type": "integer"
+														},
+														"Section90": {
+															"type": "integer"
+														},
+														"Section91": {
+															"type": "integer"
+														},
+														"TotTaxRelief": {
+															"type": "integer"
+														}
+													}
+												},
+												"IntrstPay": {
+													"type": "object",
+													"properties": {
+														"IntrstPayUs234A": {
+															"type": "integer"
+														},
+														"IntrstPayUs234B": {
+															"type": "string"
+														},
+														"IntrstPayUs234C": {
+															"type": "string"
+														},
+														"LateFilingFee234F": {
+															"type": "integer"
+														},
+														"TotalIntrstPay": {
+															"type": "integer"
+														}
+													}
+												},
+												"GrossTaxPayable": {
+													"type": "integer"
+												},
+												"TaxPayAfterCreditUs115JD": {
+													"type": "integer"
+												},
+												"NetTaxLiability": {
+													"type": "integer"
+												},
+												"AggregateTaxInterestLiability": {
+													"type": "integer"
+												}
+											}
+										},
+										"TaxPaid": {
+											"type": "object",
+											"properties": {
+												"TaxesPaid": {
+													"type": "object",
+													"properties": {
+														"AdvanceTax": {
+															"type": "integer"
+														},
+														"TDS": {
+															"type": "integer"
+														},
+														"TCS": {
+															"type": "integer"
+														},
+														"SelfAssessmentTax": {
+															"type": "integer"
+														},
+														"TotalTaxesPaid": {
+															"type": "integer"
+														}
+													}
+												},
+												"BalTaxPayable": {
+													"type": "string"
+												}
+											}
+										},
+										"Refund": {
+											"type": "object",
+											"properties": {
+												"BankAccountDtls": {
+													"type": "object",
+													"properties": {
+														"AddtnlBankDetails": {
+															"type": "array",
+															"items": {
+																"type": "object",
+																"properties": {
+																	"IFSCCode": {
+																		"type": "string"
+																	},
+																	"BankName": {
+																		"type": "string"
+																	},
+																	"BankAccountNo": {
+																		"type": "string"
+																	},
+																	"UseForRefund": {
+																		"type": "boolean"
+																	}
+																}
+															}
+														}
+													}
+												},
+												"RefundDue": {
+													"type": "integer"
+												}
+											}
+										},
+										"AssetOutIndiaFlag": {
+											"type": "string"
+										}
+									}
+								},
+								"ScheduleIT": {
+									"type": "object",
+									"properties": {
+										"TaxPayment": {
+											"type": "array",
+											"items": {
+												"type": "object",
+												"properties": {
+													"BSRCode": {
+														"type": "string"
+													},
+													"DateDep": {
+														"type": "string"
+													},
+													"SrlNoOfChaln": {
+														"type": "integer"
+													},
+													"Amt": {
+														"type": "integer"
+													}
+												}
+											}
+										},
+										"TotalTaxPayments": {
+											"type": "integer"
+										}
+									}
+								},
+								"ScheduleTDS1": {
+									"type": "object",
+									"properties": {
+										"TDSonSalary": {
+											"type": "array",
+											"items": {
+												"type": "object",
+												"properties": {
+													"EmployerOrDeductorOrCollectDetl": {
+														"type": "object",
+														"properties": {
+															"TAN": {
+																"type": "string"
+															},
+															"EmployerOrDeductorOrCollecterName": {
+																"type": "string"
+															}
+														}
+													},
+													"IncChrgSal": {
+														"type": "integer"
+													},
+													"TotalTDSSal": {
+														"type": "integer"
+													}
+												}
+											}
+										},
+										"TotalTDSonSalaries": {
+											"type": "integer"
+										}
+									}
+								},
+								"ScheduleTDS2": {
+									"type": "object",
+									"properties": {
+										"TDSOthThanSalaryDtls": {
+											"type": "array",
+											"items": {
+												"type": "object",
+												"properties": {
+													"TaxDeductCreditDtls": {
+														"type": "object",
+														"properties": {
+															"TaxDeductedOwnHands": {
+																"type": "integer"
+															},
+															"TaxClaimedOwnHands": {
+																"type": "integer"
+															}
+														}
+													},
+													"TANOfDeductor": {
+														"type": "string"
+													},
+													"GrossAmount": {
+														"type": "integer"
+													},
+													"AmtCarriedFwd": {
+														"type": "integer"
+													}
+												}
+											}
+										},
+										"TotalTDSonOthThanSals": {
+											"type": "integer"
+										}
+									}
+								},
+								"ScheduleTDS3": {
+									"type": "object",
+									"properties": {
+										"TotalTDS3OnOthThanSal": {
+											"type": "integer"
+										}
+									}
+								},
+								"ScheduleTCS": {
+									"type": "object",
+									"properties": {
+										"TotalSchTCS": {
+											"type": "integer"
+										}
+									}
+								},
+								"Verification": {
+									"type": "object",
+									"properties": {
+										"Declaration": {
+											"type": "object",
+											"properties": {
+												"AssesseeVerName": {
+													"type": "string"
+												},
+												"FatherName": {
+													"type": "string"
+												},
+												"AssesseeVerPAN": {
+													"type": "string"
+												}
+											}
+										},
+										"Capacity": {
+											"type": "string"
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
