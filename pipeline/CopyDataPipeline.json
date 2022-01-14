@@ -94,7 +94,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "TargetBlobService",
+						"referenceName": "SourceBlobServiceForActivity2",
 						"type": "DatasetReference"
 					}
 				],
