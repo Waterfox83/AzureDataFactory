@@ -10,6 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
+				"fileName": "AHRPA8571C.json",
 				"container": "files"
 			}
 		},
