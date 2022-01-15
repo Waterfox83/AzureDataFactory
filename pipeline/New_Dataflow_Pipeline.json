@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "SimpleDataFlow_copy1",
+				"name": "ExtendedDataFlow",
 				"type": "ExecuteDataFlow",
 				"dependsOn": [],
 				"policy": {
