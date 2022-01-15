@@ -20,6 +20,19 @@
 		},
 		"schema": [
 			{
+				"name": "ITEM_NBR",
+				"type": "String"
+			},
+			{
+				"name": "DEPT_NBR",
+				"type": "String"
+			},
+			{
+				"name": "ITEM_STATUS_CODE",
+				"type": "String"
+			},
+			{
+				"name": "CREATED_USERID",
 				"type": "String"
 			}
 		]
