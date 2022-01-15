@@ -1,5 +1,5 @@
 {
-	"name": "SimpleDataFlow_copy1",
+	"name": "ExtendedDataFlow",
 	"properties": {
 		"type": "MappingDataFlow",
 		"typeProperties": {
