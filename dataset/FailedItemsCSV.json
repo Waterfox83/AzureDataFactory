@@ -1,0 +1,108 @@
+{
+	"name": "FailedItemsCSV",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "FailedItemsCSVService",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "failed_items.csv",
+				"container": "csv"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "ITEM_NBR",
+				"type": "String"
+			},
+			{
+				"name": "GTIN",
+				"type": "String"
+			},
+			{
+				"name": "DEPT_NBR",
+				"type": "String"
+			},
+			{
+				"name": "SUBCLASS_NBR",
+				"type": "String"
+			},
+			{
+				"name": "VENDOR_NBR",
+				"type": "String"
+			},
+			{
+				"name": "VENDOR_DEPT_NBR",
+				"type": "String"
+			},
+			{
+				"name": "VENDOR_SEQ_NBR",
+				"type": "String"
+			},
+			{
+				"name": "Supplier_Name",
+				"type": "String"
+			},
+			{
+				"name": "ITEM_STATUS_CODE",
+				"type": "String"
+			},
+			{
+				"name": "Is_GDSN",
+				"type": "String"
+			},
+			{
+				"name": "ITEM1_DESC",
+				"type": "String"
+			},
+			{
+				"name": "ITEM2_DESC",
+				"type": "String"
+			},
+			{
+				"name": "SIGNING_DESC",
+				"type": "String"
+			},
+			{
+				"name": "SIGNING1_DESC",
+				"type": "String"
+			},
+			{
+				"name": "SIGNING2_DESC",
+				"type": "String"
+			},
+			{
+				"name": "DC_Count",
+				"type": "String"
+			},
+			{
+				"name": "Club_Count",
+				"type": "String"
+			},
+			{
+				"name": "TOTAL_SALE_QTY",
+				"type": "String"
+			},
+			{
+				"name": "TOTAL_SALES_AMT",
+				"type": "String"
+			},
+			{
+				"name": "Comments for not to migrate",
+				"type": "String"
+			},
+			{
+				"name": "Merchant",
+				"type": "String"
+			}
+		]
+	}
+}
