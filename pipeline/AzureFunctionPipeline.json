@@ -16,7 +16,10 @@
 				"userProperties": [],
 				"typeProperties": {
 					"functionName": "HttpExample",
-					"method": "GET"
+					"method": "POST",
+					"body": {
+						"body": "Abhishek"
+					}
 				},
 				"linkedServiceName": {
 					"referenceName": "AzureFunction1",
